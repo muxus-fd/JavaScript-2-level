@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <div class="green">click me</div>
+    <script>
+        //ES-7
+        //alert(2 ** 3);
+        
+//        ES-8
+//        var obj = {a:1,b:2};
+//        var arr = Object.values(obj);
+//        console.log(arr);
+        
+        
+        //ES-6
+//        var MY_CONST = 1;
+//        const NAME = 'John';
+        
+//        let age = 25;
+//        if(1){
+//           let age = 30;
+//           console.log(age);
+//        }
+//        console.log(age);
+        
+//       var age = 25;
+//        if(1){
+//           var age = 30;
+//           console.log(age);
+//        }
+//        console.log(age);
+        
+        
+//        function passTest(result){
+//            if(result){
+//                let firstName = "John";
+//                let birthday = 1990;
+//            }
+//            console.log(firstName +", рожденный в "+birthday + "...");
+//        }
+//        passTest(1);
+        
+//        let i = 23;
+//        for(i=0;i<5;i++){
+//            console.log(i);
+//        }
+//        console.log(i);
+        
+  
+        //Template literals
+//    let firstName = "Ivan";
+//    let lastName = "Ivanov";
+//    const yearOfBirthday = 1990;
+//        
+//    function calcAge(year){
+//        return new Date().getFullYear() - year;
+//    }
+    
+//    const fio = `${firstName}, рожденный в ${yearOfBirthday} году, ему ${calcAge(yearOfBirthday)} лет`;
+//    //console.log(fio);
+//    console.log(fio.startsWith('Ivan'));  
+//    console.log(fio.endsWith('ет'));
+//    console.log(fio.includes('году'));
+//    console.log(fio.repeat(5));
+    
+        
+  //Arow functions
+//let t = function(){
+//    return 50;
+//}
+
+//let func = () => 30;
+//alert(func());
+
+    
+//const calcAge2 = year => new Date().getFullYear() - year;
+//alert(calcAge2(1990));        
+//        
+// const demo = (x,y=10) => {
+//     let a = y;
+//     return 5 - x + a;
+// }       
+//        
+//console.log(demo(20));     
+        
+        
+// let box = {
+//     color: 'green',
+//     position: 1,
+//     clickMe: function(){
+//         document.querySelector('.green').addEventListener('click',function(){
+//             let str = `Это контейнер номер ${this.position}, цвет ${this.color}`;
+//             console.log(str);
+//             console.log(this);
+//         });
+//     }
+// }      
+        
+//У стрелочных функций есть важно отличие от обычных - они не создают собственного контекста
+// и наследуют контекст родителя
+// let box = {
+//     color: 'green',
+//     position: 1,
+//     clickMe: function(){
+//         document.querySelector('.green').addEventListener('click',()=>{
+//             let str = `Это контейнер номер ${this.position}, цвет ${this.color}`;
+//             console.log(str);
+//             console.log(this);
+//         });
+//     }
+// }         
+//
+// box.clickMe();                                                       
+//        
+        
+//Деструктуризация 
+//Деструктуризация позволяет извлечь части из составных данных. Она позволяет
+//код сделать короче и понятнее
+//ES-5
+//var mas = ['Petr',30];
+//var name = mas[0];
+//var age = mas[1];
+
+// ES-6       
+//let mas = ['Petr',30];   
+//let [name,age] = mas;
+//console.log(`${name} ${age}`);
+
+//let obj = {
+//    firstName: 'Petr',
+//    lastName: 'Petrov',
+//    professions: ['programmer','admin']
+//}
+//let {firstName : n,lastName,professions : [p1,p2]} = obj;
+//console.log(n); 
+//console.log(lastName);    
+//console.log(p1);    
+//console.log(p2);     
+        
+//let f = year => {
+//    const age = 2020 -year;
+//    return [age,65 - age];
+//}     
+//
+//let [currentAge, left] = f(1990);
+
+//Оператор spread - используется для разделения коллекций на отдельные элементы (распаковка)
+//rest - упаковка элементов
+        
+//    function restTest(a,b,...c){
+//        console.log(c);
+//    }
+//    restTest(1,2,3,4,5);
+        
+//        //SPREAD
+//const values = [34,54,34,65,78];
+//console.log(Math.max(...values));//распаковали
+
+//    function test(a,b,c){
+//        console.log(this.name);
+//    }
+//        
+//    let obj = {
+//        name:'Igor'
+//    };
+//   test.call(obj,1,2,3)
+        
+//let calcArgs = (a,b,c,d) => a + b + c + d; 
+//const arrNums = [2,3,4,5];
+//let sum = calcArgs(...arrNums);
+//console.log(sum);   
+        
+//Клонирование свойств массивов
+//let arr = ['one','two'];
+//let arr2 = ['test',...arr,'demo'];
+//console.log(arr2);
+    
+
+let langs = ['JS','PHP','Java'];
+//langs.forEach((item) => console.log(item));
+        
+//Метод arr.map(func) - используется для трансформации массива
+//Он создает новый массив, который будет состоять из результатов функции func(item,i,arr)
+        
+let sizeItemsLangs = langs.map(item => item.length);    
+console.log(sizeItemsLangs);  
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    </script>
+</body>
+</html>
