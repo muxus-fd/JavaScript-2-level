@@ -1,0 +1,23 @@
+form .row {
+    display: block;
+    padding: 7px 8px;
+    margin-bottom: 7px;
+}
+
+form .row:hover {
+    background: #f1f7fa;
+}
+
+form label {
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 140px;
+    padding: 6px 0;
+    color: #464646;
+    vertical-align: top;
+}
+
+.errorinput {
+    background-color: red !important;
+}
