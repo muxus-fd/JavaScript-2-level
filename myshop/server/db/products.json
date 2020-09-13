@@ -1,0 +1,26 @@
+[
+  {
+    "id_product": 1,
+    "product_name": "Mi TV 32",
+    "price": 12000,
+    "img": "./img/MITV32.png"
+  },
+  {
+    "id_product": 2,
+    "product_name": "Mi TV 43",
+    "price": 23000,
+    "img": "./img/MITV43.png"
+  },
+  {
+    "id_product": 3,
+    "product_name": "Mi TV 50",
+    "price": 32000,
+    "img": "./img/MITV50.png"
+  },
+  {
+    "id_product": 4,
+    "product_name": "Mi TV 55",
+    "price": 44000,
+    "img": "./img/MITV55.png"
+  }
+]

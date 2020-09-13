@@ -1,0 +1,13 @@
+{
+    "amount": 46600,
+    "countGoods": 2,
+    "contents": [
+        {
+            "quantity": 8,
+            "id_product": 3,
+            "product_name": "Mi TV 50",
+            "price": 32000,
+            "img": "./img/MITV50.png"
+        }
+    ]
+}
