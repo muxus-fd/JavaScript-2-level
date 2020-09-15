@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="app">
+    <header>
+        <img src="img/milogo.png" class="logoimg" alt="logo">
+        <div class="logo">Xiaomi</div>
+        <div class="cart">
+
+            <filterel></filterel>
+            <cart ref="cart"></cart>
+        </div>
+    </header>
+    <main>
+        <error ref="error"></error>
+        <products ref="products"></products>
+    </main>
+</div>
+<footer>
+    <section class="footer-links">
+        <div class="footer-link-wrp">
+            <span class="footer-link-text">Copyright © 2020
+                <a href="#" class="footer-link link-white">Xiaomi</a>
+            </span>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Support</a>
+        </div>
+        <div class="footer-link-wrp">
+            <span class="footer-link-text">Designed by
+                <a href="#" class="footer-link link-white">Muxus</a>
+            </span>
+            <span class="footer-link-text ">Only on
+                <a href="#" class="footer-link link-white">Envato Market</a></span>
+        </div>
+    </section>
+</footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!-- <script src="js/ProductComp.js"></script>
+<script src="js/CartComp.js"></script>
+<script src="js/FilterComp.js"></script>
+<script src="js/ErrorComp.js"></script> -->
+    <script src="build.js"></script>
+</body>
+</html>
